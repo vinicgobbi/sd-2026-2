@@ -1,0 +1,30 @@
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Bytecode / cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribuição / build
+build/
+dist/
+*.egg-info/
+
+# Ferramentas e ambientes
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Editores / IDEs
+.vscode/
+.idea/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
