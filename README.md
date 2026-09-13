@@ -2,6 +2,8 @@
 
 Repositório de apoio da disciplina, com códigos, exemplos e materiais usados em aula.
 
+Os slides de cada aula (PDF) estão em [`PDF's/`](./PDF's/); os códigos de cada aula ficam na pasta correspondente, linkada no cronograma abaixo.
+
 ## Disciplina
 
 | | |
@@ -35,10 +37,10 @@ VM de apoio das aulas
 | Aula | Data | Tema | Bloco |
 |---|---|---|---|
 | 1 | 06/08/2026 | [Abertura, diagnóstico e ambiente](./Aula%2001/) | C1 |
-| 2 | 13/08/2026 | Modelos de arquitetura e sockets (TCP/UDP) | C1 |
-| 3 | 20/08/2026 | Concorrência: um servidor para vários clientes | C1 |
-| 4 | 27/08/2026 | Do RPC ao gRPC: chamada remota moderna | C1 |
-| 5 | 10/09/2026 | Serviços web: REST e OpenAPI com FastAPI | C1 |
+| 2 | 13/08/2026 | [Modelos de arquitetura e sockets (TCP/UDP)](./Aula%2002/) | C1 |
+| 3 | 20/08/2026 | [Concorrência: um servidor para vários clientes](./Aula%2003/) | C1 |
+| 4 | 27/08/2026 | [Do RPC ao gRPC: chamada remota moderna](./Aula%2004/) | C1 |
+| 5 | 10/09/2026 | [Serviços web: REST e OpenAPI com FastAPI](./Aula%2005/) | C1 |
 | 6 | Estudo Dirigido (EAD) 🏠 | IA como serviço distribuído (marco do curso) | C1 |
 | 7 | 17/09/2026 | Revisão e Avaliação C1.A1 + entrega do C1.A2 | C1 |
 | 8 | 24/09/2026 | Mensageria, eventos e API Gateway | C2 |
