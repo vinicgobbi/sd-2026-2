@@ -1,3 +1,6 @@
+// servico.proto — Laboratório da Aula 4 (contrato gRPC)
+// Gere os stubs com:
+//   python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. servico.proto
 syntax = "proto3";
 
 package calculadora;
@@ -7,7 +10,7 @@ service Calculadora {
 }
 
 message Operandos {        // o que o cliente ENVIA
-  int32 a = 1;             // o "= 1" é a posição do campo no formato binário
+  int32 a = 1;             // "= 1" é a posição do campo no formato binário
   int32 b = 2;
 }
 
