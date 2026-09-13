@@ -1,26 +1,18 @@
+# cliente.py — Laboratório da Aula 3 (cliente interativo do eco)
+# Abra VÁRIOS terminais e rode este cliente em cada um, ao mesmo tempo.
+# Rode:  python cliente.py
 import socket
-import threading
 
 HOST, PORT = "127.0.0.1", 5000
 
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)   # TCP
-s.connect((HOST, PORT))                        # CONECTA no servidor
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect((HOST, PORT))
 print("Conectado. Digite mensagens (ou 'sair'):")
-
-def receber():
-    while True:
-        dado = s.recv(1024)                     # RECEBE mensagens do outro cliente
-        if not dado:
-            print("\n[cliente] servidor encerrou a conexão", flush=True)
-            break
-        print(f"\noutro cliente: {dado.decode()}\n> ", end="", flush=True)
-
-threading.Thread(target=receber, daemon=True).start()
-
 while True:
     msg = input("> ")
     if msg == "sair":
         break
-    s.sendall(msg.encode())                    # ENVIA bytes
-    print(f"voce: {msg}")
+    s.sendall(msg.encode())
+    eco = s.recv(1024)
+    print("eco:", eco.decode())
 s.close()
