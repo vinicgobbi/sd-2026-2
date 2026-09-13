@@ -1,0 +1,12 @@
+# Dependências do repositório, por aula.
+# Aulas 01-03 usam apenas a biblioteca padrão do Python (socket, threading, time) — nada a instalar.
+
+# Aula 04 — gRPC
+grpcio==1.83.1
+grpcio-tools==1.83.1
+
+# Aula 05 — API REST com FastAPI
+fastapi==0.141.1
+uvicorn==0.52.4
+pytest==9.1.1
+httpx==0.28.1
