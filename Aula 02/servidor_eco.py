@@ -1,38 +1,22 @@
+# servidor_eco.py — Laboratório da Aula 2 (servidor de eco em TCP)
+# Rode em um terminal:  python servidor_eco.py
 import socket
-import threading
 
-HOST, PORT = '127.0.0.1', 5000
+HOST, PORT = "127.0.0.1", 5000                 # localhost + porta escolhida
 
-clientes = []
-lock = threading.Lock()
-
-def tratar_cliente(conexao, endereco):
-	print(f"[servidor] cliente conectado em: {endereco}", flush=True)
-	with lock:
-		clientes.append(conexao)
-	while True:
-		dado = conexao.recv(1024)
-		if not dado:
-			break
-		print(f"[servidor] recebi de {endereco}: {dado.decode()}", flush=True)
-		with lock:
-			for c in clientes:
-				if c is not conexao:
-					try:
-						c.sendall(dado)
-					except OSError:
-						pass
-	with lock:
-		clientes.remove(conexao)
-	conexao.close()
-	print(f"[servidor] cliente {endereco} desconectado", flush=True)
-
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-s.bind((HOST,PORT))
-s.listen()
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)    # TCP
+s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)  # reusar a porta
+s.bind((HOST, PORT))                           # reserva o endereço
+s.listen()                                     # passa a ESCUTAR
 print(f"[servidor] ouvindo em {HOST}:{PORT}", flush=True)
 
+conexao, endereco = s.accept()                 # ACEITA um cliente (bloqueia)
+print(f"[servidor] cliente conectado: {endereco}", flush=True)
 while True:
-	conexao, endereco = s.accept()
-	threading.Thread(target=tratar_cliente, args=(conexao, endereco), daemon=True).start()
+    dado = conexao.recv(1024)                  # RECEBE bytes
+    if not dado:                               # cliente fechou -> sai
+        break
+    print(f"[servidor] recebi: {dado.decode()}", flush=True)
+    conexao.sendall(dado)                      # ECO: devolve o mesmo
+conexao.close()
+print("[servidor] cliente desconectou.", flush=True)
