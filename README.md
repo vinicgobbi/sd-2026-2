@@ -41,7 +41,7 @@ VM de apoio das aulas
 | 3 | 20/08/2026 | [Concorrência: um servidor para vários clientes](./Aula%2003/) | C1 |
 | 4 | 27/08/2026 | [Do RPC ao gRPC: chamada remota moderna](./Aula%2004/) | C1 |
 | 5 | 10/09/2026 | [Serviços web: REST e OpenAPI com FastAPI](./Aula%2005/) | C1 |
-| 6 | Estudo Dirigido (EAD) 🏠 | IA como serviço distribuído (marco do curso) | C1 |
+| 6 | Estudo Dirigido (EAD) 🏠 | [IA como serviço distribuído (marco do curso)](./Aula%2006/) | C1 |
 | 7 | 17/09/2026 | Revisão e Avaliação C1.A1 + entrega do C1.A2 | C1 |
 | 8 | 24/09/2026 | Mensageria, eventos e API Gateway | C2 |
 | 9 | 01/10/2026 | Tempo e ordenação: relógios lógicos | C2 |
