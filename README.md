@@ -44,7 +44,7 @@ VM de apoio das aulas
 | 6 | Estudo Dirigido (EAD) 🏠 | [IA como serviço distribuído (marco do curso)](./Aula%2006/) | C1 |
 | 7 | 17/09/2026 | [Revisão e Avaliação C1.A1 + entrega do C1.A2](./Aula%2007/) | C1 |
 | 8 | 24/09/2026 | [Mensageria, eventos e API Gateway](./Aula%2008/) | C2 |
-| 9 | 01/10/2026 | Tempo e ordenação: relógios lógicos | C2 |
+| 9 | 01/10/2026 | [Tempo e ordenação: relógios lógicos](./Aula%2009/) | C2 |
 | 10 | 08/10/2026 | Replicação, consistência e o teorema CAP | C2 |
 | 11 | 22/10/2026 | Consenso (Raft) e resiliência | C2 |
 | 12 | 29/10/2026 | Revisão e Avaliação C2.A1 + entrega do C2.A2 | C2 |
