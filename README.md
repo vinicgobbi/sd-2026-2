@@ -47,7 +47,7 @@ VM de apoio das aulas
 | 9 | 01/10/2026 | [Tempo e ordenação: relógios lógicos](./Aula%2009/) | C2 |
 | 10 | 08/10/2026 | [Replicação, consistência e o teorema CAP](./Aula%2010/) | C2 |
 | 11 | 22/10/2026 | [Consenso (Raft) e resiliência](./Aula%2011/) | C2 |
-| 12 | 29/10/2026 | Revisão e Avaliação C2.A1 + entrega do C2.A2 | C2 |
+| 12 | 29/10/2026 | [Revisão e Avaliação C2.A1 + entrega do C2.A2](./Aula%2012/) | C2 |
 | 13 | 05/11/2026 | Computação em nuvem, containers e o primeiro deploy | C3 |
 | 14 | 12/11/2026 | Orquestração, serverless e computação na borda | C3 |
 | 15 | 19/11/2026 | Observabilidade: enxergar o que acontece no sistema | C3 |
